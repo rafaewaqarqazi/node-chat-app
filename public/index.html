@@ -5,10 +5,24 @@
     
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="style.css" /> -->
     
 </head>
 <body>
     <p>Welcome</p>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        var socket = io();
+        socket.on('connect',(socket)=>{
+            console.log('Connected to server');
+            
+        });
+
+        socket.on('disconnect',()=>{
+            console.log('Disconnected!');
+            
+        });
+    </script>
 </body>
 </html>
