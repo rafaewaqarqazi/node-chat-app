@@ -12,17 +12,6 @@
     <p>Welcome</p>
 
     <script src="/socket.io/socket.io.js"></script>
-    <script>
-        var socket = io();
-        socket.on('connect',(socket)=>{
-            console.log('Connected to server');
-            
-        });
-
-        socket.on('disconnect',()=>{
-            console.log('Disconnected!');
-            
-        });
-    </script>
+    <script src="/js/index.js"></script>
 </body>
 </html>
